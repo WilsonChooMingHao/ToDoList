@@ -9,6 +9,8 @@ public class Task {
 		this.description = description;
 	}
 	
+	// Wilson testing jenkins auto build after removing
+	// then re-adding ant plugin in jenkins web server
 	public Task(String description, boolean isComplete) {
 		super();
 		this.description = description;

@@ -39,4 +39,8 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 		// Add code here
 		return null;
 	}
+	
+	public Collection<Task> getIncompletedTasks() {
+		return null;
+	}
 }

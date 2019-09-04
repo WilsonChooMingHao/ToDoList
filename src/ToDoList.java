@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 public class ToDoList {
 private HashMap<String, Task> tasks = new HashMap<String, Task>();
-
 	public void addTask (Task task) {
 		//Add code here
 		tasks.put(task.getDescription(), task);
@@ -15,7 +14,6 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 			getTask(description).setComplete(true);
 	}
 	public boolean getStatus(String description) {
-		//Add code here
 		if(getTask(description) != null)
 			return getTask(description).isComplete();
 		return false;
@@ -37,10 +35,6 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 	}
 	public Collection<Task> getCompletedTasks() {
 		// Add code here
-		return null;
-	}
-	
-	public Collection<Task> getIncompletedTasks() {
 		return null;
 	}
 }

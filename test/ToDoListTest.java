@@ -49,6 +49,21 @@ public class ToDoListTest extends TestCase{
 		assertTrue("Completed newly added task", toDoList.getStatus(description));
 	}
 	
+	//Mingyan
+	@Test
+	public void testGetStatusForAssignment() {
+		assertTrue("To Do List Is Empty", toDoList.getAllTasks().isEmpty());
+		toDoList.addTask(newTask);
+		assertFalse("To Do List Shouldn't Be Null Now", toDoList.getAllTasks().isEmpty());
+		assertFalse("Task Should Return A False as it is incomplete", toDoList.getStatus(description));
+		System.out.println(toDoList.getStatus(description));
+		toDoList.completeTask(description);
+		assertTrue("Task Should be Completed now", toDoList.getStatus(description));
+		System.out.println(toDoList.getStatus(description));
+		toDoList.removeTask(description);
+		assertTrue("To Do List Should be Empty after the test", toDoList.getAllTasks().isEmpty());
+	}
+	
 	@Test
 	public void testGetStatus() {
 		toDoList.addTask(newTask);

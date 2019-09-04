@@ -14,6 +14,8 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 		if(getTask(description) != null)
 			getTask(description).setComplete(true);
 	}
+	
+	//mingyan
 	public boolean getStatus(String description) {
 		//Add code here
 		if(getTask(description) != null)
